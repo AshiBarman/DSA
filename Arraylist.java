@@ -18,5 +18,35 @@ public class Arraylist {
         for(int num : list){
             System.out.println(num);
         }
+        System.out.println(list.contains(30));
+        int s = list.get(0); 
+        for(int i : list){
+            if(i > s){
+                s = i;
+            }
+            }
+        System.out.println(s);
+
+        int sum =0;
+        for(int i : list){
+            sum += i;
+        }
+        System.out.println(sum);
+
+        int avg = sum / list.size();
+        System.out.println(avg);
+
+        for (int i= list.size()-1;i>=0;i--){
+            System.out.println(list.get(i));
+        }
+        int count = 0;
+        for (int i :list){
+            if(i % 2 == 0){
+            count++;
+        }
+    }
+        System.out.println(count);
+        Collections.sort(list,Collections.reverseOrder());
+        System.out.println(list);
     }
 }
