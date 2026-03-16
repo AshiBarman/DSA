@@ -1,5 +1,4 @@
 // Write a program to move thezeros on the right side of the  array.
-
 import java.util.Scanner;
 
 public class MoveZerosRight {
